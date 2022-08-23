@@ -2,14 +2,14 @@ version: '3.8'
 services:
   animal:
     build: ./animal
-    image: prakash2151/animal
+    image: prakash2151/animal:latest
     ports:
     - target: 5001
       published: 5001
       protocol: tcp
   noise:
     build: ./noise
-    image: prakah2151/noise
+    image: prakah2151/noise:latest
     ports:
     - target: 5000
       published: 5000
