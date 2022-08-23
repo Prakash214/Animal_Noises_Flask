@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  animal:
+    build: ./animal
+    image: prakash2151/animal
+    ports:
+    - target: 5001
+      published: 5001
+      protocol: tcp
+  noise:
+    build: ./noise
+    image: prakah2151/noise
+    ports:
+    - target: 5000
+      published: 5000
+      protocol: tcp
